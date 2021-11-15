@@ -354,7 +354,9 @@ namespace Pavel_Andrei_Lab5
             }
            // SetValidationBinding();
             ReInitialize();
-          // SetValidationBinding();
+            BindingOperations.ClearBinding(firstNameTextBox, TextBox.TextProperty);
+            BindingOperations.ClearBinding(lastNameTextBox, TextBox.TextProperty);
+            SetValidationBinding();
 
         }
 
